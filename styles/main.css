@@ -1,10 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Rubik+Maps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=Lobster&display=swap');
+
+:root {
+    --background-color: rgb(247, 219, 223);
+    --text-color: black;
+    --link-color: rgb(227, 29, 95);
+}
+
 body {
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Lobster', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 h1, h2, h3 {
     line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+    color: var(--text-color);
+}
+
+a {
+    color: var(--text-color);
+}
+
+a:hover {
+    color: var(--link-color);
 }
 
 body#about img {
@@ -45,6 +67,7 @@ body > * {
 
 body > header {
     grid-area: head;
+    font-family: 'Dancing Script', cursive;
 }
 
 body > nav {
