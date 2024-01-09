@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Rubik+Maps&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Itim&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Economica&family=K2D:wght@300&display=swap');
 
 :root {
     --background-color: rgb(247, 219, 223);
@@ -7,18 +7,23 @@
     --link-color: rgb(227, 29, 95);
 }
 
-body {
+body, h2 {
     font-size: 18px;
     line-height: 1.5;
-    font-family: 'Lobster', sans-serif;
+    font-family: 'K2D', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1 {
     line-height: 1.2;
     font-family: 'Dancing Script', cursive;
     color: var(--text-color);
+}
+
+h3 {
+    font-family: 'K2D', sans-serif;
+    font-size: 15px;
 }
 
 a {
@@ -85,6 +90,7 @@ body > main {
 
 body > footer {
     grid-area: foot;
+    font-size: 15px;
 }
 
 header, footer {
@@ -104,6 +110,17 @@ body#portfolio ul#portfolioItems {
     padding: 0;
 }
 
+body#portfolio img {
+    height: 250px;
+    width: 370px;
+    margin-top: 35px;
+}
+
+body#portfolio li > .list {
+    font-size: 15px;
+    margin-top: 18px;
+}
+
 @media screen and (min-width: 25em) {
   body#portfolio ul#portfolioItems li {
       flex-basis: 48%;
@@ -114,3 +131,12 @@ body#portfolio ul#portfolioItems {
 body#portfolio ul#portfolioItems li img {
     max-width: 100%;
 }
+
+body#resume h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'K2D', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
